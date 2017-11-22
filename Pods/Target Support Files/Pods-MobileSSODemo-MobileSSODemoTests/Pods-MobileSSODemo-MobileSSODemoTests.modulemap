@@ -1,0 +1,6 @@
+framework module Pods_MobileSSODemo_MobileSSODemoTests {
+  umbrella header "Pods-MobileSSODemo-MobileSSODemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

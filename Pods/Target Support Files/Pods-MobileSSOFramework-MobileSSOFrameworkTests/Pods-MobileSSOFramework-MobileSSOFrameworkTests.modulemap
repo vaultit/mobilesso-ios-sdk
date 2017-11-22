@@ -1,0 +1,6 @@
+framework module Pods_MobileSSOFramework_MobileSSOFrameworkTests {
+  umbrella header "Pods-MobileSSOFramework-MobileSSOFrameworkTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

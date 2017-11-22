@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2781A5AE27F134B7A3A8398E /* Pods_MobileSSODemo_MobileSSODemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22AD13624766840A9E52DEC /* Pods_MobileSSODemo_MobileSSODemoUITests.framework */; };
+		D222B2541E5C778000A432DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D222B2531E5C778000A432DF /* AppDelegate.swift */; };
+		D222B2561E5C778000A432DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D222B2551E5C778000A432DF /* ViewController.swift */; };
+		D222B2591E5C778000A432DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D222B2571E5C778000A432DF /* Main.storyboard */; };
+		D222B25B1E5C778000A432DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D222B25A1E5C778000A432DF /* Assets.xcassets */; };
+		D222B25E1E5C778000A432DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D222B25C1E5C778000A432DF /* LaunchScreen.storyboard */; };
+		D222B2691E5C778100A432DF /* MobileSSODemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D222B2681E5C778100A432DF /* MobileSSODemoTests.swift */; };
+		D2522B1A1EB85F770033250A /* Pods_MobileSSODemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2522B051EB85E370033250A /* Pods_MobileSSODemo.framework */; };
+		D2522B231EB861DE0033250A /* MobileSSODemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2522B221EB861DE0033250A /* MobileSSODemoUITests.swift */; };
+		D2CD7FB31F4586DE00B858F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2CD7FB21F4586DE00B858F0 /* Localizable.strings */; };
+		D2ECAE0E1E71610C00701B4C /* MobileSSOFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2ECAE0D1E71610C00701B4C /* MobileSSOFramework.framework */; };
+		D2ECAE0F1E71610C00701B4C /* MobileSSOFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D2ECAE0D1E71610C00701B4C /* MobileSSOFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D4B5F59196DC34BE378224CE /* Pods_MobileSSODemo_MobileSSODemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A80D03557A5C3C1EE08C324A /* Pods_MobileSSODemo_MobileSSODemoTests.framework */; };
+		F7AD5D8A990CA47E7A857D57 /* Pods_MobileSSODemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6BDDB53CE43D0789A59DEC /* Pods_MobileSSODemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D222B2651E5C778100A432DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D222B2481E5C778000A432DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D222B24F1E5C778000A432DF;
+			remoteInfo = MobileSSODemo;
+		};
+		D2522B251EB861DE0033250A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D222B2481E5C778000A432DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D222B24F1E5C778000A432DF;
+			remoteInfo = MobileSSODemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D2ECAE101E71610C00701B4C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D2ECAE0F1E71610C00701B4C /* MobileSSOFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		13C1F727FF66E383D26BF050 /* Pods-MobileSSODemo-MobileSSODemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileSSODemo-MobileSSODemoUITests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-MobileSSODemo-MobileSSODemoUITests/Pods-MobileSSODemo-MobileSSODemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		18DFA9DD59B17CCAFF26F6CA /* Pods-MobileSSODemo-MobileSSODemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileSSODemo-MobileSSODemoTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-MobileSSODemo-MobileSSODemoTests/Pods-MobileSSODemo-MobileSSODemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		309C39548A3B3C91DFD020D6 /* Pods-MobileSSODemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileSSODemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-MobileSSODemo/Pods-MobileSSODemo.release.xcconfig"; sourceTree = "<group>"; };
+		4B3534045E2C5352A9FE1322 /* Pods-MobileSSODemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileSSODemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-MobileSSODemo/Pods-MobileSSODemo.debug.xcconfig"; sourceTree = "<group>"; };
+		87AD07BC897730C4C02A8B0D /* Pods-MobileSSODemo-MobileSSODemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileSSODemo-MobileSSODemoTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-MobileSSODemo-MobileSSODemoTests/Pods-MobileSSODemo-MobileSSODemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9856F5C764BD7C2BE9723327 /* Pods-MobileSSODemo-MobileSSODemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileSSODemo-MobileSSODemoUITests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-MobileSSODemo-MobileSSODemoUITests/Pods-MobileSSODemo-MobileSSODemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A80D03557A5C3C1EE08C324A /* Pods_MobileSSODemo_MobileSSODemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileSSODemo_MobileSSODemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC6BDDB53CE43D0789A59DEC /* Pods_MobileSSODemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileSSODemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D222B2501E5C778000A432DF /* MobileSSODemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileSSODemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D222B2531E5C778000A432DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D222B2551E5C778000A432DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D222B2581E5C778000A432DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D222B25A1E5C778000A432DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D222B25D1E5C778000A432DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D222B25F1E5C778000A432DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D222B2641E5C778100A432DF /* MobileSSODemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileSSODemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D222B2681E5C778100A432DF /* MobileSSODemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileSSODemoTests.swift; sourceTree = "<group>"; };
+		D222B26A1E5C778100A432DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2483C151E5D96FA00BE365B /* MobileSSOFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileSSOFramework.framework; path = "../MobileSSOFramework/build/Debug-iphoneos/MobileSSOFramework.framework"; sourceTree = "<group>"; };
+		D2522B051EB85E370033250A /* Pods_MobileSSODemo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_MobileSSODemo.framework; path = "../../../Library/Developer/Xcode/DerivedData/MobileSSO-fbbegnhugkiseydzztbktqmwtmio/Build/Products/Debug-iphonesimulator/Pods_MobileSSODemo.framework"; sourceTree = "<group>"; };
+		D2522B071EB85E470033250A /* MobileSSOFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileSSOFramework.framework; path = "../../../Library/Developer/Xcode/DerivedData/MobileSSO-fbbegnhugkiseydzztbktqmwtmio/Build/Products/Debug-iphonesimulator/MobileSSOFramework.framework"; sourceTree = "<group>"; };
+		D2522B091EB85E570033250A /* Pods_MobileSSOFramework_MobileSSOFrameworkTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_MobileSSOFramework_MobileSSOFrameworkTests.framework; path = "../../../Library/Developer/Xcode/DerivedData/MobileSSO-fbbegnhugkiseydzztbktqmwtmio/Build/Products/Debug-iphonesimulator/Pods_MobileSSOFramework_MobileSSOFrameworkTests.framework"; sourceTree = "<group>"; };
+		D2522B0B1EB85E600033250A /* Pods_MobileSSOFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_MobileSSOFramework.framework; path = "../../../Library/Developer/Xcode/DerivedData/MobileSSO-fbbegnhugkiseydzztbktqmwtmio/Build/Products/Debug-iphonesimulator/Pods_MobileSSOFramework.framework"; sourceTree = "<group>"; };
+		D2522B0D1EB85E690033250A /* AppAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppAuth.framework; path = "../../../Library/Developer/Xcode/DerivedData/MobileSSO-fbbegnhugkiseydzztbktqmwtmio/Build/Products/Debug-iphonesimulator/AppAuth/AppAuth.framework"; sourceTree = "<group>"; };
+		D2522B141EB85F400033250A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/MobileSSO-fbbegnhugkiseydzztbktqmwtmio/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		D2522B151EB85F400033250A /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "../../../Library/Developer/Xcode/DerivedData/MobileSSO-fbbegnhugkiseydzztbktqmwtmio/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework"; sourceTree = "<group>"; };
+		D2522B161EB85F400033250A /* SwiftKeychainWrapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftKeychainWrapper.framework; path = "../../../Library/Developer/Xcode/DerivedData/MobileSSO-fbbegnhugkiseydzztbktqmwtmio/Build/Products/Debug-iphonesimulator/SwiftKeychainWrapper/SwiftKeychainWrapper.framework"; sourceTree = "<group>"; };
+		D2522B201EB861DE0033250A /* MobileSSODemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileSSODemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2522B221EB861DE0033250A /* MobileSSODemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileSSODemoUITests.swift; sourceTree = "<group>"; };
+		D2522B241EB861DE0033250A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2CD7FB21F4586DE00B858F0 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		D2ECAE0D1E71610C00701B4C /* MobileSSOFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MobileSSOFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2ECAE111E71647500701B4C /* MobileSSODemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MobileSSODemo.entitlements; sourceTree = "<group>"; };
+		F22AD13624766840A9E52DEC /* Pods_MobileSSODemo_MobileSSODemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileSSODemo_MobileSSODemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D222B24D1E5C778000A432DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7AD5D8A990CA47E7A857D57 /* Pods_MobileSSODemo.framework in Frameworks */,
+				D2ECAE0E1E71610C00701B4C /* MobileSSOFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D222B2611E5C778100A432DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2522B1A1EB85F770033250A /* Pods_MobileSSODemo.framework in Frameworks */,
+				D4B5F59196DC34BE378224CE /* Pods_MobileSSODemo_MobileSSODemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2522B1D1EB861DE0033250A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2781A5AE27F134B7A3A8398E /* Pods_MobileSSODemo_MobileSSODemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63677230F8EA630235C45F5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2522B141EB85F400033250A /* Alamofire.framework */,
+				D2522B151EB85F400033250A /* ObjectMapper.framework */,
+				D2522B161EB85F400033250A /* SwiftKeychainWrapper.framework */,
+				D2522B0D1EB85E690033250A /* AppAuth.framework */,
+				D2522B0B1EB85E600033250A /* Pods_MobileSSOFramework.framework */,
+				D2522B091EB85E570033250A /* Pods_MobileSSOFramework_MobileSSOFrameworkTests.framework */,
+				D2522B071EB85E470033250A /* MobileSSOFramework.framework */,
+				D2522B051EB85E370033250A /* Pods_MobileSSODemo.framework */,
+				D2483C151E5D96FA00BE365B /* MobileSSOFramework.framework */,
+				BC6BDDB53CE43D0789A59DEC /* Pods_MobileSSODemo.framework */,
+				A80D03557A5C3C1EE08C324A /* Pods_MobileSSODemo_MobileSSODemoTests.framework */,
+				F22AD13624766840A9E52DEC /* Pods_MobileSSODemo_MobileSSODemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4D0A263DA76785B707BD822 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B3534045E2C5352A9FE1322 /* Pods-MobileSSODemo.debug.xcconfig */,
+				309C39548A3B3C91DFD020D6 /* Pods-MobileSSODemo.release.xcconfig */,
+				87AD07BC897730C4C02A8B0D /* Pods-MobileSSODemo-MobileSSODemoTests.debug.xcconfig */,
+				18DFA9DD59B17CCAFF26F6CA /* Pods-MobileSSODemo-MobileSSODemoTests.release.xcconfig */,
+				9856F5C764BD7C2BE9723327 /* Pods-MobileSSODemo-MobileSSODemoUITests.debug.xcconfig */,
+				13C1F727FF66E383D26BF050 /* Pods-MobileSSODemo-MobileSSODemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D222B2471E5C778000A432DF = {
+			isa = PBXGroup;
+			children = (
+				D2ECAE0D1E71610C00701B4C /* MobileSSOFramework.framework */,
+				D222B2521E5C778000A432DF /* MobileSSODemo */,
+				D222B2671E5C778100A432DF /* MobileSSODemoTests */,
+				D2522B211EB861DE0033250A /* MobileSSODemoUITests */,
+				D222B2511E5C778000A432DF /* Products */,
+				C4D0A263DA76785B707BD822 /* Pods */,
+				63677230F8EA630235C45F5C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D222B2511E5C778000A432DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D222B2501E5C778000A432DF /* MobileSSODemo.app */,
+				D222B2641E5C778100A432DF /* MobileSSODemoTests.xctest */,
+				D2522B201EB861DE0033250A /* MobileSSODemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D222B2521E5C778000A432DF /* MobileSSODemo */ = {
+			isa = PBXGroup;
+			children = (
+				D2ECAE111E71647500701B4C /* MobileSSODemo.entitlements */,
+				D222B2531E5C778000A432DF /* AppDelegate.swift */,
+				D222B2551E5C778000A432DF /* ViewController.swift */,
+				D222B2571E5C778000A432DF /* Main.storyboard */,
+				D222B25A1E5C778000A432DF /* Assets.xcassets */,
+				D222B25C1E5C778000A432DF /* LaunchScreen.storyboard */,
+				D222B25F1E5C778000A432DF /* Info.plist */,
+				D2CD7FB21F4586DE00B858F0 /* Localizable.strings */,
+			);
+			path = MobileSSODemo;
+			sourceTree = "<group>";
+		};
+		D222B2671E5C778100A432DF /* MobileSSODemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D222B2681E5C778100A432DF /* MobileSSODemoTests.swift */,
+				D222B26A1E5C778100A432DF /* Info.plist */,
+			);
+			path = MobileSSODemoTests;
+			sourceTree = "<group>";
+		};
+		D2522B211EB861DE0033250A /* MobileSSODemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D2522B221EB861DE0033250A /* MobileSSODemoUITests.swift */,
+				D2522B241EB861DE0033250A /* Info.plist */,
+			);
+			path = MobileSSODemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D222B24F1E5C778000A432DF /* MobileSSODemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D222B26D1E5C778100A432DF /* Build configuration list for PBXNativeTarget "MobileSSODemo" */;
+			buildPhases = (
+				B48ADF62B6B87AADEAC6DA25 /* [CP] Check Pods Manifest.lock */,
+				D222B24C1E5C778000A432DF /* Sources */,
+				D222B24D1E5C778000A432DF /* Frameworks */,
+				D222B24E1E5C778000A432DF /* Resources */,
+				D63C9560ADD13AF953C583FE /* [CP] Embed Pods Frameworks */,
+				2379E6ABC7168974B24E6282 /* [CP] Copy Pods Resources */,
+				D2483C171E5DD3F900BE365B /* Run Script */,
+				D2ECAE101E71610C00701B4C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobileSSODemo;
+			productName = MobileSSODemo;
+			productReference = D222B2501E5C778000A432DF /* MobileSSODemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D222B2631E5C778100A432DF /* MobileSSODemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D222B2701E5C778100A432DF /* Build configuration list for PBXNativeTarget "MobileSSODemoTests" */;
+			buildPhases = (
+				052B1462EEC600E9CD645257 /* [CP] Check Pods Manifest.lock */,
+				D222B2601E5C778100A432DF /* Sources */,
+				D222B2611E5C778100A432DF /* Frameworks */,
+				D222B2621E5C778100A432DF /* Resources */,
+				E37F9C1589EF999C03C8DF18 /* [CP] Embed Pods Frameworks */,
+				22956AB98E888EBCADD60578 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D222B2661E5C778100A432DF /* PBXTargetDependency */,
+			);
+			name = MobileSSODemoTests;
+			productName = MobileSSODemoTests;
+			productReference = D222B2641E5C778100A432DF /* MobileSSODemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D2522B1F1EB861DE0033250A /* MobileSSODemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2522B291EB861DE0033250A /* Build configuration list for PBXNativeTarget "MobileSSODemoUITests" */;
+			buildPhases = (
+				E88FC334E143AC332A48416A /* [CP] Check Pods Manifest.lock */,
+				D2522B1C1EB861DE0033250A /* Sources */,
+				D2522B1D1EB861DE0033250A /* Frameworks */,
+				D2522B1E1EB861DE0033250A /* Resources */,
+				4D30ECC03A3006C5ADC5D150 /* [CP] Embed Pods Frameworks */,
+				BE4597EB3C97866681B355EF /* [CP] Copy Pods Resources */,
+				D2AF7B301EB87FFD009615A1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2522B261EB861DE0033250A /* PBXTargetDependency */,
+			);
+			name = MobileSSODemoUITests;
+			productName = MobileSSODemoUITests;
+			productReference = D2522B201EB861DE0033250A /* MobileSSODemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D222B2481E5C778000A432DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Nixu;
+				TargetAttributes = {
+					D222B24F1E5C778000A432DF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = U33T53KNLM;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					D222B2631E5C778100A432DF = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D222B24F1E5C778000A432DF;
+					};
+					D2522B1F1EB861DE0033250A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = U33T53KNLM;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D222B24F1E5C778000A432DF;
+					};
+				};
+			};
+			buildConfigurationList = D222B24B1E5C778000A432DF /* Build configuration list for PBXProject "MobileSSODemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D222B2471E5C778000A432DF;
+			productRefGroup = D222B2511E5C778000A432DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D222B24F1E5C778000A432DF /* MobileSSODemo */,
+				D222B2631E5C778100A432DF /* MobileSSODemoTests */,
+				D2522B1F1EB861DE0033250A /* MobileSSODemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D222B24E1E5C778000A432DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D222B25E1E5C778000A432DF /* LaunchScreen.storyboard in Resources */,
+				D2CD7FB31F4586DE00B858F0 /* Localizable.strings in Resources */,
+				D222B25B1E5C778000A432DF /* Assets.xcassets in Resources */,
+				D222B2591E5C778000A432DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D222B2621E5C778100A432DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2522B1E1EB861DE0033250A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		052B1462EEC600E9CD645257 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		22956AB98E888EBCADD60578 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-MobileSSODemo-MobileSSODemoTests/Pods-MobileSSODemo-MobileSSODemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2379E6ABC7168974B24E6282 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-MobileSSODemo/Pods-MobileSSODemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D30ECC03A3006C5ADC5D150 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-MobileSSODemo-MobileSSODemoUITests/Pods-MobileSSODemo-MobileSSODemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B48ADF62B6B87AADEAC6DA25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BE4597EB3C97866681B355EF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-MobileSSODemo-MobileSSODemoUITests/Pods-MobileSSODemo-MobileSSODemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2483C171E5DD3F900BE365B /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/ClientSecret.env",
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "INFO_PLIST=\"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nCLIENT_SECRET=`cat ${SCRIPT_INPUT_FILE_0}`\necho \"Build with client secret: ${CLIENT_SECRET}, add to ${INFO_PLIST} \"\n/usr/libexec/PlistBuddy -c \"Set :MobileSSOClientSecret ${CLIENT_SECRET}\" \"$INFO_PLIST\"\n";
+		};
+		D2AF7B301EB87FFD009615A1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/bin/xcrun simctl uninstall booted com.nixu.MobileSSODemoUITests";
+		};
+		D63C9560ADD13AF953C583FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-MobileSSODemo/Pods-MobileSSODemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E37F9C1589EF999C03C8DF18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-MobileSSODemo-MobileSSODemoTests/Pods-MobileSSODemo-MobileSSODemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E88FC334E143AC332A48416A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D222B24C1E5C778000A432DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D222B2561E5C778000A432DF /* ViewController.swift in Sources */,
+				D222B2541E5C778000A432DF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D222B2601E5C778100A432DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D222B2691E5C778100A432DF /* MobileSSODemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2522B1C1EB861DE0033250A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2522B231EB861DE0033250A /* MobileSSODemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D222B2661E5C778100A432DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D222B24F1E5C778000A432DF /* MobileSSODemo */;
+			targetProxy = D222B2651E5C778100A432DF /* PBXContainerItemProxy */;
+		};
+		D2522B261EB861DE0033250A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D222B24F1E5C778000A432DF /* MobileSSODemo */;
+			targetProxy = D2522B251EB861DE0033250A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D222B2571E5C778000A432DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D222B2581E5C778000A432DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D222B25C1E5C778000A432DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D222B25D1E5C778000A432DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D222B26B1E5C778100A432DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D222B26C1E5C778100A432DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D222B26E1E5C778100A432DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B3534045E2C5352A9FE1322 /* Pods-MobileSSODemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MobileSSODemo/MobileSSODemo.entitlements;
+				DEVELOPMENT_TEAM = U33T53KNLM;
+				INFOPLIST_FILE = MobileSSODemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nixu.idapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		D222B26F1E5C778100A432DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 309C39548A3B3C91DFD020D6 /* Pods-MobileSSODemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MobileSSODemo/MobileSSODemo.entitlements;
+				DEVELOPMENT_TEAM = U33T53KNLM;
+				INFOPLIST_FILE = MobileSSODemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nixu.idapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		D222B2711E5C778100A432DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87AD07BC897730C4C02A8B0D /* Pods-MobileSSODemo-MobileSSODemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MobileSSODemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nixu.MobileSSODemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileSSODemo.app/MobileSSODemo";
+			};
+			name = Debug;
+		};
+		D222B2721E5C778100A432DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18DFA9DD59B17CCAFF26F6CA /* Pods-MobileSSODemo-MobileSSODemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MobileSSODemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nixu.MobileSSODemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileSSODemo.app/MobileSSODemo";
+			};
+			name = Release;
+		};
+		D2522B271EB861DE0033250A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9856F5C764BD7C2BE9723327 /* Pods-MobileSSODemo-MobileSSODemoUITests.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = U33T53KNLM;
+				INFOPLIST_FILE = MobileSSODemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nixu.MobileSSODemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = MobileSSODemo;
+			};
+			name = Debug;
+		};
+		D2522B281EB861DE0033250A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13C1F727FF66E383D26BF050 /* Pods-MobileSSODemo-MobileSSODemoUITests.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = U33T53KNLM;
+				INFOPLIST_FILE = MobileSSODemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nixu.MobileSSODemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = MobileSSODemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D222B24B1E5C778000A432DF /* Build configuration list for PBXProject "MobileSSODemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D222B26B1E5C778100A432DF /* Debug */,
+				D222B26C1E5C778100A432DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D222B26D1E5C778100A432DF /* Build configuration list for PBXNativeTarget "MobileSSODemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D222B26E1E5C778100A432DF /* Debug */,
+				D222B26F1E5C778100A432DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D222B2701E5C778100A432DF /* Build configuration list for PBXNativeTarget "MobileSSODemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D222B2711E5C778100A432DF /* Debug */,
+				D222B2721E5C778100A432DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2522B291EB861DE0033250A /* Build configuration list for PBXNativeTarget "MobileSSODemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2522B271EB861DE0033250A /* Debug */,
+				D2522B281EB861DE0033250A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D222B2481E5C778000A432DF /* Project object */;
+}

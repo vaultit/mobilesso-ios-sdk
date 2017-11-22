@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  MobileSSODemo
+
+  Created by Testi on 17/08/2017.
+  Copyright © 2017 Nixu. All rights reserved.
+*/
+
+vaultITMobileSSODefaultLoginExpiredMessage = "Logging in...";
+vaultITMobileSSODefaultSessionCheckFailedMessage = "Could not log in.";
+vaultITMobileSSODefaultSessionCheckSuccessMessage = "Logged in!";
