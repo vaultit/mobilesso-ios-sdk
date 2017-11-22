@@ -48,7 +48,7 @@ Modify the newly created Podfile by adding the private Pod source to it. Put the
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
-source 'https://git.vaultit.org/nordiceid/mobilesso-ios-podspec.git'
+source 'https://github.com/vaultit/mobilesso-ios-podspec.git'
 ```
 
 and by adding the following line inside your app target in the Podfile:
@@ -83,7 +83,7 @@ First add these two lines to the top of your Podfile (the first one is the defau
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
-source 'https://git.vaultit.org/nordiceid/mobilesso-ios-podspec.git'
+source 'https://github.com/vaultit/mobilesso-ios-podspec.git'
 ```
 
 Then simply add the line
