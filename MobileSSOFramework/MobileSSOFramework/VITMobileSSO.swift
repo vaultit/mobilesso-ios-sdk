@@ -96,6 +96,13 @@ import Foundation
         return Bundle.main.infoDictionary?["MobileSSOClockSkewTolerance"] as? Double ?? 120.0
     }
     
+    /// A not-so-optimal SSO workaround for iOS 11, uses system safari. SFAuthenticationSession should be preferred
+    /// whenever possible. If you experience SSO issues with the default implementation, please report bugs to Apple
+    /// to gain momentum for this issue.
+    public static var useSafariWorkaround_iOS11: Bool {
+        return Bundle.main.infoDictionary?["MobileSSOUseSafariWorkaround"] as? Bool ?? false
+    }
+    
     /// The entry point of the framework. This must be called before using any methods of the VITSessionManager.
     /// Add the call to the didFinishLaunchingWithOptions method of your AppDelegate.
     public static func initializeSDK(resortToOfflineTimeout: Double = 5.0) {

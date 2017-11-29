@@ -27,6 +27,8 @@
 
 This version of the VaultITMobileSSO SDK requires you to build the project with *Xcode 9*, which supports iOS 11 and Swift 4.
 
+**IMPORTANT NOTE about iOS 11**: Apple has some bugs with its new SFAuthenticationSession implementation that is required for SSO to work in iOS 11 and later. Currently SSO will not work as intended with iOS 11. Workaround for this can be activated by setting a Info.plist property "MobileSSOUseSafariWorkaround" to YES.
+
 ### Download and install
 
 #### Add to a new project or to a project not using CocoaPods
@@ -55,7 +57,7 @@ and by adding the following line inside your app target in the Podfile:
 
 ```ruby
 target 'YourApp' do
-    pod 'VaultITMobileSSOFramework', '~> 0.4.7'
+    pod 'VaultITMobileSSOFramework', '~> 0.5.0'
     # Your other pods here
 end
 ```
@@ -89,7 +91,7 @@ source 'https://github.com/vaultit/mobilesso-ios-podspec.git'
 Then simply add the line
 
 ```ruby
-pod 'VaultITMobileSSOFramework', '~> 0.4.7'
+pod 'VaultITMobileSSOFramework', '~> 0.5.0'
 ```
 
 to your Podfile inside your app target. Then run `pod update`. If your Pod repositories are up-to-date, a simple `pod install` might be enough instead.
@@ -226,7 +228,7 @@ You should wait for the *initialized* callback before initiating a manual login 
 
 ### Additional session check with Safari
 
-Even if a session is not stored in the keychain of your app or any other app that shares the same keychain, you can still use SSO based on valid system browser cookies. This requires the Safari to appear, and it cannot be obstructed or hidden in any way as that will get your app rejected from the App Store. For this reason this is not done automatically at SDK initialization, but rather left at your discretion when to perform this action. To do this, call the [VITSessionManager.shared.presentSessionCheck](Classes/VITSessionManager.html) method. The simplest (while not necessarily the best) way to do this is 
+Even if a session is not stored in the keychain of your app or any other app that shares the same keychain, you can still use SSO based on valid system browser cookies. This requires the Safari to appear, and it cannot be obstructed or hidden in any way as that will get your app rejected from the App Store. For this reason this is not done automatically at SDK initialization, but rather left at your discretion when to perform this action. To do this, call the [VITSessionManager.shared.presentSessionCheck](Classes/VITSessionManager.html) method. The simplest (while not necessarily the best) way to do this is
 
 ```swift
 func initialized(session: VITSession?) {
@@ -247,7 +249,7 @@ func initialized(session: VITSession?) {
 The above code uses the default UI for coordinating the session check, and there are 3 localizable strings that you can set to your liking, e.g. to:
 
 ```swift
-// Displayed before the session-checking Safari will pop into view. 
+// Displayed before the session-checking Safari will pop into view.
 vaultITMobileSSODefaultLoginExpiredMessage = "Logging in...";
 
 // Displayed if the Safari check did not yield a session.
@@ -261,27 +263,27 @@ If you would like to customize how this UI operation is handled, you can impleme
 
 ```swift
 @objc public protocol VITSessionCheckUICoordinator: NSObjectProtocol {
-    /// This method will be called before any other UI action will take place. Here you can decide how to inform the user 
-    /// about the Safari that is about to pop into the screen. The check will not continue until you call the provided 
+    /// This method will be called before any other UI action will take place. Here you can decide how to inform the user
+    /// about the Safari that is about to pop into the screen. The check will not continue until you call the provided
     /// completion block.
     ///
     /// Parameter completion: Call this function block when you are ready to continue the session checking process.
     func willBeginSessionCheck(completion: @escaping () -> Void)
 
-    /// This method will be called when the SDK will begin downloading the GLUU discovery document to find out all the 
-    /// required login authorization endpoints and other configuration. This might be a very fast or very slow process 
+    /// This method will be called when the SDK will begin downloading the GLUU discovery document to find out all the
+    /// required login authorization endpoints and other configuration. This might be a very fast or very slow process
     /// depending on the network connection. Here you can show some sort of spinner or something.
     func willDownloadDiscoveryDocument()
-    
+
     /// This method is called when the discovery doc is downloaded and before the Safari is presented.
     func willPresentSafariViewController()
-    
-    /// This method is called when the session check finishes. The success parameter is true if a session was found, 
+
+    /// This method is called when the session check finishes. The success parameter is true if a session was found,
     /// false otherwise. The VITSessionManagerDelegate will only be called after you call the provided completion block.
     ///
     /// - Parameter completion: Call this function block when you are ready to provide the result with the VITSessionManagerDelegate.
     func didFinishWithResult(success: Bool, completion: @escaping () -> Void)
-    
+
     /// The UIViewController instance that should present the required SFSafariViewController (iOS 9 & 10) / SFAuthenticationSession (iOS 11).
     var safariPresentingViewController: UIViewController { get }
 }
@@ -305,7 +307,7 @@ let extraScopes = ["my_custom_backend_scope1", "my_custom_backend_scope2"]
 
 VITSessionManager.shared.presentLogin(in: self, extraScopes: extraScopes, stateCompletion: { state in
         /// This optional callback can be used to stay up-to-date with what is happening with the login process.
-        /// The login requires heavy network and UI involvement from the SDK, so using this might be necessary to properly 
+        /// The login requires heavy network and UI involvement from the SDK, so using this might be necessary to properly
         /// handle everything in your app.
         switch state {
         case .configurationLoaded:
@@ -335,7 +337,7 @@ The *presentLogin* method will open up a browser and present the login screen to
 
 ### Step-up authentication
 
-If you want to support multi-level authentication with different access level with different *acr_values*, it is possible with the *presentLogin* method of [VITSessionManager](Classes/VITSessionManager.html). If the *presentLogin* is called again with different *acr_values*, the login is presented again and the 
+If you want to support multi-level authentication with different access level with different *acr_values*, it is possible with the *presentLogin* method of [VITSessionManager](Classes/VITSessionManager.html). If the *presentLogin* is called again with different *acr_values*, the login is presented again and the
 session will be re-established with the new login method.
 
 ### Logging out

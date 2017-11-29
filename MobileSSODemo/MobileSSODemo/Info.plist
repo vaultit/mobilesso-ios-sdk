@@ -64,6 +64,8 @@
 	<string>$(AppIdentifierPrefix)mobilesso_shared</string>
 	<key>MobileSSOClientSecret</key>
 	<string></string>
+	<key>MobileSSOUseSafariWorkaround</key>
+	<false/>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>

@@ -84,29 +84,36 @@ class LoginAuthorizationFlow: NSObject, OIDAuthorizationFlowSession, SFSafariVie
         let requestURL = authRequest.authorizationRequestURL()
         
         if #available(iOS 9.0, *) {
-            let requiredScheme = VITMobileSSO.loginRedirectUri.scheme
-            
             if #available(iOS 11.0, *) {
-                let sfAuthSession = SFAuthenticationSession(url: requestURL, callbackURLScheme: requiredScheme, completionHandler: { url, error in
-                    if let receivedUrl = url {
-                        let _ = self.resumeAuthorizationFlow(with: receivedUrl)
-                    }
-                    else if let error = error {
-                        loge(error)
-                        let errorCode = (error as NSError).code
-                        
-                        if errorCode == 1 {
-                            completion?(nil, .cancelled)
+                if VITMobileSSO.useSafariWorkaround_iOS11 {
+                    // Use the hacky workaround.
+                    UIApplication.shared.openURL(requestURL)
+                }
+                else {
+                    // Use SFAuthenticationSession.
+                    let requiredScheme = VITMobileSSO.loginRedirectUri.scheme
+                    
+                    let sfAuthSession = SFAuthenticationSession(url: requestURL, callbackURLScheme: requiredScheme, completionHandler: { url, error in
+                        if let receivedUrl = url {
+                            let _ = self.resumeAuthorizationFlow(with: receivedUrl)
                         }
-                        else {
-                            completion?(nil, .authFlowError)
+                        else if let error = error {
+                            loge(error)
+                            let errorCode = (error as NSError).code
+                            
+                            if errorCode == 1 {
+                                completion?(nil, .cancelled)
+                            }
+                            else {
+                                completion?(nil, .authFlowError)
+                            }
                         }
-                    }
-                })
-                
-                sfAuthSession.start()
-                
-                self.authSession = sfAuthSession
+                    })
+                    
+                    sfAuthSession.start()
+                    
+                    self.authSession = sfAuthSession
+                }
             } else {
                 // Fallback on earlier versions
                 safariVC = SFSafariViewController(url: requestURL)

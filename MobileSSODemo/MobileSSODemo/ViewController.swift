@@ -184,6 +184,7 @@ extension ViewController: VITSessionManagerDelegate {
     func initialized(session: VITSession?) {
         if session != nil {
             print("Session was initialized automatically!")
+            updateProfileUI()
         }
     }
     

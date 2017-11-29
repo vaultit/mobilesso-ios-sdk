@@ -6,14 +6,14 @@ s.name = "VaultITMobileSSOFramework"
 s.summary = "VITMobileSSOFramework is a library that can be used to easily integrate OpenID Connect based login and logout to your iOS application."
 s.requires_arc = true
 
-s.version = "0.4.9"
+s.version = "0.5.0"
 
 s.license = { :type => "Apache License 2.0", :file => "LICENSE" }
 s.author = { "VaultIT" => "vaultit-support@nixu.com" }
 
-s.homepage = "https://git.vaultit.org/nordiceid/mobilesso-ios-sdk"
+s.homepage = "https://github.com/vaultit/mobilesso-ios-sdk"
 
-s.source = { :git => "https://git.vaultit.org/nordiceid/mobilesso-ios-sdk.git", :tag => "#{s.version}" }
+s.source = { :git => "https://github.com/vaultit/mobilesso-ios-sdk.git", :tag => "#{s.version}" }
 
 s.dependency 'AppAuth', '0.9.1'
 s.dependency 'Alamofire', '4.5'
